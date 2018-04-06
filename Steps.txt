@@ -1,0 +1,26 @@
+This requires python along with scapy library.
+Log into your Ubuntu machine.
+On the terminal, navigate to the folder where ipspoof.py file is located.
+Then,
+
+1. sudo apt-get install python
+	This will install python
+
+2. sudo apt-get install python-pip
+	This will install pip installer
+
+3. sudo pip install scapy
+	This will install python scapy library
+
+4. sudo apt-get install wireshark
+	To install wireshark (to see the spoofed IP packet details)
+
+5. sudo wireshark
+	To open wireshark (apply ip.addr="<source/destination-ip>" filter)
+
+6. python ipspoof.py <source-ip-address> <destination-ip-address> "<Sample-payload-message>"
+	This will tun the script
+
+7. Wireshark will show the ip packet with spoofed source ip.
+
+Cheers ^.^
